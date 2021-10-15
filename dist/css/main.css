@@ -1,0 +1,115 @@
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*tab*/
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] i {
+  padding-top: 3px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] img {
+  height: 20px;
+  width: 20px;
+  padding-top: 2px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] img {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] i {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] .active {
+  border-bottom: 5px solid #0074d9 !important;
+  color: #b2ebeb !important;
+  background-color: #ff4136 !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] .active img {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] .active i {
+  display: block !important;
+  padding-top: 3px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-hz"] .nun {
+  text-align: center;
+  background-color: #ffdc00;
+  padding-right: 12px;
+  border-bottom: 5px solid #ff4136;
+  font-weight: bold;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] i {
+  padding-top: 3px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] img {
+  height: 20px;
+  width: 20px;
+  padding-top: 2px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] img {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] i {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] .active {
+  border-bottom: 5px solid #0074d9 !important;
+  color: #b2ebeb !important;
+  background-color: #ff4136 !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] .active img {
+  display: block !important;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] .active i {
+  display: block !important;
+  padding-top: 3px;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-vr"] .nun {
+  text-align: center;
+  background-color: #ffdc00;
+  padding-right: 12px;
+  border-bottom: 5px solid #ff4136;
+  font-weight: bold;
+}
+
+div[cell-tb^="["][cell-tb$="]"][cell-tb*="-c"] {
+  margin-left: 0px;
+}
+
+/*slide*/
+.active {
+  color: red;
+  font-size: bold;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */

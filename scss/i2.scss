@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+$colors: (#ff4136 /*c1*/, #0074d9 /*c2*/, #ffdc00 /*c3*/, #ff851b /*c4*/, #b2ebeb /*c5*/);
+
+$family: (
+    cursive /*f1*/,
+    "Kirang Haerang",
+    cursive /*f2*/,
+    "Yellowtail",
+    cursive /*f3*/,
+    "Georgia,serif",
+    cursive /*f4*/,
+    sans-serif,
+    cursive /*f5*/
+);
+html {
+    box-sizing: border-box;
+}
+/*Layout Page*/
+.menu {
+    margin: 15px;
+    background-color: white;
+    border-radius: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .list {
+        padding: 25px;
+        p {
+            text-decoration: none;
+            color: #0074d9;
+            font-weight: bold;
+        }
+    }
+    .list:hover {
+        p {
+            text-decoration: none;
+            color: #ff851b !important;
+            font-weight: bold;
+        }
+    }
+    .active {
+        p {
+            text-decoration: none;
+            color: #ff851b !important;
+            font-weight: bold;
+        }
+    }
+}
+.page-sec {
+    .cell-c {
+        .as-slide{
+            height:750px;
+          }
+    
+        .content-sec {
+            background-color: white;
+            border-radius: 25px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            height: max-content;    display:flex;justify-content:center;
+         
+        }
+
+        .fl-button {
+            width: auto;
+            height: 25px;
+            background-color: #ff4136;
+        }
+
+        .rf-button {
+            margin-top: 75px;
+            background-color: #ff4136;
+            margin-right: 15px;
+            padding: 0px 12px 0px 12px;
+            width: auto;
+        }
+
+        .fl-button {
+            margin-top: 75px;
+            background-color: #ff4136;
+            margin-bottom: 45px;
+            padding: 5px 12px 5px 12px;
+        }
+
+        .rf-left-float {
+            background-color: #b2ebeb;
+            padding: 0px;
+            width: auto;
+            height: 25px;
+            padding: 0px 12px 5px 12px;
+        }
+
+        .rf-right-float {
+            background-color: #b2ebeb;
+            padding: 0px;
+            width: auto;
+            height: 25px;
+            padding: 0px 12px 5px 12px;
+        }
+
+        .left-float {
+            background-color: #b2ebeb;
+            padding: 0px;
+            width: auto;
+            height: 25px;
+            padding: 0px 12px 5px 12px;
+        }
+
+        .right-float {
+            background-color: #b2ebeb;
+            padding: 0px;
+            width: auto;
+            height: 25px;
+            padding: 0px 12px 5px 12px;
+        }
+    }
+
+}
+/*version9*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 5px;
+}
+.as-left-open,
+.as-left-close,
+.as-right-open,
+.as-right-close,
+.rs-left-open,
+.rs-left-close,
+.rs-right-open,
+.rs-right-close,
+.left-open,
+.left-close,
+.right-open,
+.right-close {
+    background-color: #b2ebeb;
+    border: 1px solid #ff4136;
+    padding: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+/*fonts*/
+@for $i from 1 through length($family) {
+    [cell-f^="["][cell-f$="]"][cell-f*="-f#{$i}"] {
+        font-family: unquote(nth($family, $i));
+    }
+}
+@media (min-width: 319.98px) {
+    @for $i from 1 through length($family) {
+        [cell-f^="["][cell-f$="]"][cell-f*="-sf#{$i}"] {
+            font-family: unquote(nth($family, $i));
+        }
+    }
+}
+@media (min-width: 575.99px) {
+    @for $i from 1 through length($family) {
+        [cell-f^="["][cell-f$="]"][cell-f*="-mf#{$i}"] {
+            font-family: unquote(nth($family, $i));
+        }
+    }
+}
+@media (min-width: 767.98px) {
+    @for $i from 1 through length($family) {
+        [cell-f^="["][cell-f$="]"][cell-f*="-tf#{$i}"] {
+            font-family: unquote(nth($family, $i));
+        }
+    }
+}
+@media (min-width: 991.98px) {
+    @for $i from 1 through length($family) {
+        [cell-f^="["][cell-f$="]"][cell-f*="-lf#{$i}"] {
+            font-family: unquote(nth($family, $i));
+        }
+    }
+}
+@media (min-width: 1199.9px) {
+    @for $i from 1 through length($family) {
+        [cell-f^="["][cell-f$="]"][cell-f*="-df#{$i}"] {
+            font-family: unquote(nth($family, $i));
+        }
+    }
+}
+
+/*table alignments*/
+@for $i from 1 through length($colors) {
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-sc#{$i}"] {
+        table {
+            tr:nth-child(even) {
+                td {
+                    background-color: unquote(nth($colors, $i)) !important;
+                }
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-ec#{$i}"] {
+        table {
+            tr:nth-child(even) {
+                td {
+                    background-color: unquote(nth($colors, $i)) !important;
+                }
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-oc#{$i}"] {
+        table {
+            tr:nth-child(odd) {
+                td {
+                    background-color: unquote(nth($colors, $i)) !important;
+                }
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-hc#{$i}"] {
+        table {
+            thead {
+                background-color: unquote(nth($colors, $i)) !important;
+                tr:nth-child(1) {
+                    background-color: unquote(nth($colors, $i)) !important;
+                    th {
+                        background-color: unquote(nth($colors, $i)) !important;
+                    }
+                }
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-b#{$i}"] {
+        table {
+            td,
+            th {
+                border: 1px solid unquote(nth($colors, $i));
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-bl#{$i}"] {
+        table {
+            td,
+            th {
+                border-left: 1px solid unquote(nth($colors, $i));
+            }
+            td:nth-child(1) {
+                border-left: none;
+            }
+            th:nth-child(1) {
+                border-left: none;
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-br#{$i}"] {
+        table {
+            td,
+            th {
+                border-right: 1px solid unquote(nth($colors, $i));
+            }
+            td:last-child {
+                border-right: none;
+            }
+            th:last-child {
+                border-right: none;
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-bt#{$i}"] {
+        table {
+            td,
+            th {
+                border-top: 1px solid unquote(nth($colors, $i));
+            }
+            thead {
+                tr:nth-child(1) {
+                    td {
+                        border-top: none;
+                    }
+                    th {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+    }
+    [cell-ta^="["][cell-ta$="]"][cell-ta*="-bb#{$i}"] {
+        table {
+            th {
+                border-bottom: 1px solid unquote(nth($colors, $i));
+            }
+            td {
+                border-bottom: 1px solid unquote(nth($colors, $i));
+            }
+            thead {
+                border-bottom: 1px solid unquote(nth($colors, $i));
+                tr {
+                    border-bottom: 1px solid unquote(nth($colors, $i));
+                }
+            }
+            tr:last-child {
+                td {
+                    border-bottom: none !important;
+                }
+                th {
+                    border-bottom: none !important;
+                }
+            }
+        }
+    }
+}
+
+/*For Input*/
+@for $i from 0 through 50 {
+    @for $j from 1 through length($colors) {
+        div[cell-in^="[-ip"][cell-in$="]"][cell-in*="-ph#{$i}(#{$j})"] {
+            ::placeholder {
+                color: unquote(nth($colors, $j));
+                font-size: #{$i}px;
+            }
+        }
+    }
+}
+/*For Radio Button*/
+div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-rd"] {
+    flex-grow: 0;
+    width: max-content;
+    div[cell-in^="["][cell-in$="]"][cell-in*="-ra"] {
+        border: 1px solid gray;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+            caret-color: transparent;
+        }
+        input:focus {
+            caret-color: transparent;
+            outline: none;
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $j from 1 through length($colors) {
+        div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-bo#{$i}(#{$j}"] {
+            div[cell-in^="["][cell-in$="]"][cell-in*="-ra"] {
+                border: #{$i}px solid unquote(nth($colors, $j));
+            }
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $j from 1 through length($colors) {
+        [cell-in^="[-rd"][cell-in$="]"][cell-in*="-.bo#{$i}(#{$j}"]:hover {
+            [cell-in^="["][cell-in$="]"][cell-in*="-ra"] {
+                border: #{$i}px solid unquote(nth($colors, $j)) !important;
+            }
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $j from 1 through length($colors) {
+        div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-bi#{$i}(#{$j})"] {
+            input {
+                border: #{$i}px solid unquote(nth($colors, $j));
+            }
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $j from 1 through length($colors) {
+        [cell-in^="[-rd"][cell-in$="]"][cell-in*="-.bi#{$i}(#{$j})"]:hover {
+            input {
+                border: #{$i}px solid unquote(nth($colors, $j)) !important;
+            }
+        }
+    }
+}
+@for $j from 1 through length($colors) {
+    div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-gi#{$j}"] {
+        input {
+            background-color: unquote(nth($colors, $j));
+        }
+    }
+}
+@for $j from 1 through length($colors) {
+    [cell-in^="[-rd"][cell-in$="]"][cell-in*="-.gi#{$j}"]:hover {
+        input {
+            background-color: unquote(nth($colors, $j)) !important;
+        }
+    }
+}
+@for $j from 1 through length($colors) {
+    div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-go#{$j}"] {
+        div[cell-in^="["][cell-in$="]"][cell-in*="-ra"] {
+            background-color: unquote(nth($colors, $j));
+        }
+    }
+}
+@for $j from 1 through length($colors) {
+    [cell-in^="[-rd"][cell-in$="]"][cell-in*="-.go#{$j}"]:hover {
+        div[cell-in^="["][cell-in$="]"][cell-in*="-ra"] {
+            background-color: unquote(nth($colors, $j)) !important;
+        }
+    }
+}
+
+div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-lt"] {
+    display: flex;
+    flex-flow: column wrap;
+}
+div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-lb"] {
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-ll"] {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    label {
+        margin-right: 15px;
+    }
+}
+div[cell-in^="[-rd"][cell-in$="]"][cell-in*="-lr"] {
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+    label {
+        margin-left: 15px;
+    }
+}
+
+/*Text Area*/
+div[cell-in^="[-tx"][cell-in$="]"][cell-in*=" "] {
+    display: flex;
+    overflow: hidden;
+    textarea {
+        flex-grow: 1;
+    }
+    textarea:focus {
+        outline: none;
+    }
+}
+@for $i from 0 through 100 {
+    div[cell-in^="[-tx"][cell-in$="]"][cell-in*="-r#{$i}"] {
+        textarea {
+            border-radius: #{$i}px;
+        }
+    }
+    div[cell-in^="[-tx"][cell-in$="]"][cell-in*="-w#{$i}"] {
+        textarea {
+            width: ($i * 1%);
+        }
+    }
+    div[cell-in^="[-tx"][cell-in$="]"][cell-in*="-h#{$i}"] {
+        textarea {
+            height: #{$i}px;
+        }
+    }
+}
+@for $j from 1 through length($colors) {
+    div[cell-in^="[-tx"][cell-in$="]"][cell-in*="-bg#{$j}"] {
+        textarea {
+            background-color: unquote(nth($colors, $j)) !important;
+        }
+    }
+    [cell-in^="[-tx"][cell-in$="]"][cell-in*="-.bg#{$j}"] {
+        textarea:hover {
+            background-color: unquote(nth($colors, $j)) !important;
+        }
+    }
+}
+@for $i from 0 through 10 {
+    @for $j from 1 through length($colors) {
+        div[cell-in^="[-tx"][cell-in$="]"][cell-in*="-b#{$i}(#{$j})"] {
+            textarea {
+                border: #{$i}px solid unquote(nth($colors, $j)) !important;
+            }
+        }
+        [cell-in^="[-tx"][cell-in$="]"][cell-in*="-.b#{$i}(#{$j})"] {
+            textarea:hover {
+                border: #{$i}px solid unquote(nth($colors, $j)) !important;
+            }
+        }
+    }
+}
+/*side menu*/
+[cell-sm^="["][cell-sm$="]"][cell-sm*="-sm"] {
+    .active {
+        color: #ff4136;
+        font-weight: bold;
+    }
+}
