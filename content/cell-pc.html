@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../dist/css/main.css">
     <link rel="stylesheet" href="../dist/css/i2.css">
+    <link rel="stylesheet" href="http://i2frontend.cu.ma/Documentation/CDN/css/i2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>cell-pc</title>
@@ -27,8 +28,7 @@
                 <div cell-nv=[-nv1:-st-fx-h100] class="">
                     <div cell-nv=[-na] class="">
                         <div cell-nv=[-lg] cell-bg=[-c2] cell-h=[-h100] class="">
-                            <p cell-f=[-s35-c5-w9]><img
-                                    src="../dist/Img/logo-blue.png"></p>
+                            <p cell-f=[-s35-c5-w9]><img src="../dist/Img/logo-blue.png"></p>
                             <button cell-d=[-dn-ln-tb-mb-sb] class=" "><i class="fa fa-bars"></i></button>
                         </div>
                         <div cell-nv=[-li] cell-bg=[-c2] cell-h=[-ha] class="">
@@ -276,9 +276,9 @@
                     </div>
                     <div cell-sl=[-m] cell-c=[-c20] class=" ">
                         <div cell-bg=[-c2] cell-c=[-c20] cell-p=[-p25] class="">
-                            <div cell-c=[-c20] cell-pc=[-pc1(42):-se] class="content-sec">
+                            <div cell-c=[-c20] cell-pc=[-ca1(42):-se] class="content-sec">
                                 <div class="content">
-                                    <div class="title-col">
+                                    <div cell-pa=[-ec10(1)] class="title-col">
                                         <div cell-Q=[-q-ct] class=" ">
                                             <div class="text">
                                                 <p cell-p=[-t5] cell-f=[-s25-w7-c2-f5] cell-ts=[-br5] cell-t=[-c]>For
@@ -292,25 +292,28 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="title-content">
+                                    <div cell-pa=[-ea10(1)] class="title-content">
                                         <div cell-Q=[-q] class="event">
                                             <div cell-c=[-c20] cell-f=[-s12-w9] class="values">
-                                                <div cell-Q=[-q-sb] class="text-area">
-                                                    <div cell-c=[-da-la-ta-m20-s20-cc] class="text-col">
-                                                        <p><span cell-f=[-c2-s16-w7]>-pcPage</span> =(Process Content
-                                                            From Another Page) Is An Array With Page Paths In Layout
-                                                            Page According To pc Index</p>
-                                                        <p><span cell-f=[-c2-s16-w7]>-pc1(1):-re</span> = Page One &
-                                                            Receives Content One From <span
-                                                                cell-f=[-c2-s16-w7]>-pc1(1):-se</span> </p>
-                                                        <p><span cell-f=[-c2-s16-w7]>-pc1(1):-se</span> = Page One &
-                                                            Sends
-                                                            Content One To <span cell-f=[-c2-s16-w7]>-pc1(1):-re</span>
-                                                        </p>
-                                                        <p><span cell-f=[-s16-w7-c2-f5]>cell-pc=[-pc1(1):-re]</span> For
-                                                            Receiving Content</p>
-                                                        <p><span cell-f=[-s16-w7-c2-f5]>cell-pc=[-pa1(1):-se]</span> For
-                                                            Sending Content</p>
+                                                <div cell-Q=[-q-sb] cell-p=[-p25] class="text-area">
+                                                    <div cell-c=[-c20] cell-t=[-c] class="text-col">
+                                                        <p cell-f=[-c2-f1-s18-w7] cell-t=[-c] cell-m=[-b45]>For Ajax Transfering Page Content From one Page To Another On Click</p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >cell-pc=[-cl1(1):] =<span cell-f=[-c2-f1-w7-s15]> For Click Actions</span></p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >cell-pc=[-ca1(1):-re] =<span cell-f=[-c2-f1-w7-s15]> For Receiving Content On
+                                                            Click</span></p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >cell-pc=[-ca1(1):-se] =<span cell-f=[-c2-f1-w7-s15]> For Sending Content On
+                                                            Click</span></p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >pcPage =<span cell-f=[-c2-f1-w7-s15]> Is An Array Of Page Paths</span></p>
+                                                    </div>
+                                                   
+                                                    <div cell-c=[-c20] class="text-col">
+                                                        <p cell-f=[-c2-f1-s18-w7] cell-t=[-c] cell-m=[-b45]>For Ajax Transfering Page Content From one Page To Another On
+                                                            Windows Open</p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >cell-pt=[-pt1(1):-re] =<span cell-f=[-c2-f1-w7-s15]> For Receiving Content On Windows
+                                                            Open</span></p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >cell-pt=[-pt1(1):-se] =<span cell-f=[-c2-f1-w7-s15]> For Sendinging Content On Windows
+                                                            Open</span></p>
+                                                        <p cell-f=[-f1-w7-s15] cell-t=[-c] >ptPage =<span cell-f=[-c2-f1-w7-s15]> Is An Array Of Page Paths</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -351,11 +354,12 @@
     var pcPage = [];
 
 </script>
-<script src="../dist/js/index.js"></script>
-<script src="../dist/js/cell.js"></script>
-<script src="../dist/js/input.js"></script>
-<script src="../dist/js/slide.js"></script>
-<script src="../dist/js/tabs.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/doc.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/index.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/cell.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/slide.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/input.js"></script>
+<script src="http://i2frontend.cu.ma/Documentation/jq/tabs.js"></script>
 <script>
     $(".content-sec .content .title-col").click(function () {
         jQuery(function () {
